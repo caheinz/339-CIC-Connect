@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+  margin: 0 4.5em 1em;
+}
+
+a {
+  color: #232F3E;
+  text-decoration: none;
+}
+
+h1:first-child {
+  margin: 0.5em 1em;
+  font-size: 2em;
+  color: #ff9900;
+}
+
+nav ul,
+nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+h3 {
+  margin: 0em 0.5em;
+  padding: 0.2em;
+}
+
+.status-box {
+  background: #95BD87;
+  border-radius: 1em;
+  max-width: 140px;
+  text-align: center;
+}
+
+/* collaborators profile pictures */
+/* .dot class code courtesy of https://www.w3schools.com/howto/howto_css_circles.asp */
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #F5734F;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 1em;
+  margin-right: 1em;
+}
+
+footer {
+  padding: 0.5em;
+  background: #232F3E;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+footer p {
+  color: #ffffff;
+  text-align: center;
+}
+
+nav a {
+  transition: 0.2s ease all;
+}
+
+nav>ul {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+nav>ul>li {
+  min-width: 18ch;
+  position: relative;
+  height: 100% flex: 1;
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+nav a {
+  display: block;
+  background: #ffffff;
+  height: 100%;
+  line-height: 75px;
+  padding: 0 0.5em;
+}
+
+nav a:hover {
+  background: #232F3E;
+  color: #ffffff;
+}
+
+nav li:hover ul {
+  display: block;
+}
+ /* responsive layout */
+ /* flex columns based on tutorial from dev.to, 
+    https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 */
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.profile-column {
+  width: 50px;
+}
+
+.explore-left-column {
+  width: 700px;
+  margin-right: 2em;
+}
+
+.explore-left-column h3 {
+  color: #FF9900;
+}
+
+.explore-right-column {
+  width: 450px;
+  margin-top: 2.5em;
+}
+
+.explore-right-column h1, p {
+  color: #000000;
+}
+
+/* mobile phone sizing */
+@media (max-width:900px) {
+  main {
+    margin: 6em;
+  }
+
+  main p {
+    font-size: 2em;
+  }
+
+  header {
+    min-height: 5.5em;
+  }
+
+  header h1:first-child {
+    font-size: 1.5em;
+  }
+
+  nav {
+    margin-top: -2000px;
+  }
+
+  .show-menu nav {
+    margin-top: 0;
+  }
+
+  header,
+	nav>ul {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+  }
+
+  nav li ul {
+    display: block;
+    position: relative;
+    margin-left: 1.5em;
+  }
+
+  .toggle {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+
+  .toggle span {
+    display: block;
+    width: 40px;
+    height: 10px;
+    margin-bottom: 5px;
+    background: #232F3E;
+    z-index: 1;
+  }
+    /* the row class I used doesn't allow the image to proportionally scale down as the screen gets smaller */
+    img{
+        max-width: 60%;
+        height: auto;
+    }
+    .status-box{
+        font-size: 0.8em;
+        max-width: 120px;
+    }
+    /* font size for mobile viewing - 
+       I couldn't figure out how to proportionally scale both the h1 and p in the same line
+       without them appearing the same size. */
+  .explore-right-column {
+    max-width: 80%;
+  }
+
+  .explore-right-column h1 {
+    font-size: 1.2em;
+  }
+
+  .explore-right-column p {
+    font-size: 1em;
+  }
+}

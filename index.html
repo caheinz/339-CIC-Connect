@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang ="en">
+   <head>
+      <meta charset = "UTF-8">
+      <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+      <title>CIC Connect</title>
+      <link rel = "stylesheet" href = "style.css">
+      <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   </head>
+   <body>
+      <header>
+         <h1>
+            <i class="fas fa-link" title="logo"></i> CIC Connect
+         </h1>
+         <nav>
+            <ul>
+               <li>
+                  <a href = '#'>Explore</a>
+               </li>
+               <li>
+                  <a href = '#'>Challenges</a>
+               </li>
+               <li>
+                  <a href = '#'>Connections</a>
+               </li>
+               <li>
+                  <a href = '#'>Centers</a>
+                  <ul>
+                     <li>
+                        <a href = '#'>Cal Poly DxHub</a>
+                     </li>
+                     <li>
+                        <a href = '#'>Munich University of Applied Sciences</a>
+                     </li>
+                     <li>
+                        <a href = '#'>ASU Smart City</a>
+                     </li>
+                     <li>
+                        <a href = '#'>Busan Metro City</a>
+                     </li>
+                     <li>
+                        <a href = '#'>CODE</a>
+                     </li>
+                     <li>
+                        <a href = '#'>Sciences Po</a>
+                     </li>
+                     <li>
+                        <a href = '#'>British Columbia</a>
+                     </li>
+                     <li>
+                        <a href = '#'>Swinburne CIC</a>
+                     </li>
+                  </ul>
+               </li>
+               <li>
+                  <a href = '#'>Profile &nbsp; 
+                  <i class="far fa-user-circle" title ="Profile-icon"></i>
+                  </a>
+               </li>
+            </ul>
+         </nav>
+         <!--  aria-labelledby needs to point to element with ID of "main-menu" -- missing from HTML code -->
+         <div class = "toggle" tabindex="-1" aria-hidden="true" id ="main-menu" aria-labelledby="main-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+      </header>
+      <main>
+         <div class = "flexbox-two-columns">
+            <!-- flex columns based on tutorial from dev.to, 
+               https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01 -->
+            <div class= "row">
+               <div class= "column">
+                  <div class ="profile-column">
+                     <img src ="asu2x.png" alt = "Arizona State University logo" width = "50" height = "50">
+                  </div>
+               </div>
+               <div class="column">
+                  <div class="explore-left-column">
+                     <h3> ASU Smart City Cloud Innovation Center </h3>
+                  </div>
+                  <div class = "row">
+                     <img src = "donald-giannatti-Wj1D-qiOseE-unsplash.jpg" alt = "Satellite at sunset. Image taken by Donald Giannatti"  width="700" height="500">
+                  </div>
+               </div>
+               <div class ="column">
+                  <div class="explore-right-column">
+                     <h1> Acquiring Equipment </h1>
+                     <div class ="status-box">
+                        <h3> Engage phase</h3>
+                     </div>
+                     <p> Improving access to expensive and rare scientific equipment to benefit both researchers and equipment owners. The CIC and UTO collaborated on a Working Backwards workshop with a number of IT leaders from academic institutions in the Sun Corridor Research Network.  </p>
+                     <h3>Collaborators:</h3>
+                     <span class="dot"></span>
+                     <span class="dot"></span>
+                     <span class="dot"></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <p>&copy; 2020 Amazon Web Services
+         <p>
+      </footer>
+      <!-- I won't be using a footer in this website because the content in the explore page
+         will be endlessly flowing like the LinkedIn Home page -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+   </body>
+</html>
